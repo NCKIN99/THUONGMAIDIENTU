@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ECEAEA">
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_Search_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:hint="Bạn đang muốn tìm gì"
+            android:textSize="18sp" />
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/img_ShoppingCart_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shopping_cart"/>
+            <TextView
+                android:id="@+id/number_Shopping_Cart_tab"
+                android:visibility="visible"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/circle_textview"
+                android:textColor="@color/white"
+                android:text="0"
+                android:layout_gravity="top|end"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

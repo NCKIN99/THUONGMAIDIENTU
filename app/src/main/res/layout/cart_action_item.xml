@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shopping_cart"
+        android:layout_gravity="center"/>
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/textView_Shopping_cart_number"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="top|end"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_textview"
+        android:gravity="center"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+</FrameLayout>

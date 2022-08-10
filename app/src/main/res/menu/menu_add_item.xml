@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Thêm máy tính"
+        android:id="@+id/menu_add_laptop"/>
+    <item android:id="@+id/menu_add_phone"
+        android:title="Thêm Điện thoại"/>
+    <item android:id="@+id/menu_add_accessory"
+        android:title="Thêm phụ kiện"/>
+
+</menu>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_add_warranty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Fragment_Add_Warranty">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm gói khuyến mãi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+
+
+        <EditText
+            android:id="@+id/editTextAddTenKhuyenMai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập tên gói khuyến mãi"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/warning_AddTenKhuyenMai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Nhập tên gói khuyến mãi"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại sản phẩm khuyến mãi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+            <RadioGroup
+                android:id="@+id/add_Promotion_RadioGroup"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/add_Promotion_Laptop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Máy tính"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/add_Promotion_Phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Điện thoại"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/add_Promotion_Accessory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phụ kiện"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/warning_AddLoaiSpKhuyenMai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Chọn loại sản phẩm khuyến mãi"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="3"
+            android:background="@drawable/custom_edittext"
+            android:orientation="horizontal">
+            <AutoCompleteTextView
+                android:id="@+id/editTextAddSpKM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Chọn loại sản phẩm khuyến mãi"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"                android:layout_weight="2"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/ImageChonSPKM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/add_item2" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView_SpKM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:hint="Sản phẩm khuyến mãi"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/warning_SpKM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Chọn sản phẩm khuyến mãi"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ"
+                android:paddingStart="25dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/editText_NgayBatDauKM"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_edittext"
+                android:paddingTop="10dp"
+                android:drawableEnd="@drawable/ic_baseline_expand_more_32"
+                android:textColor="@color/black"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/warning_NgayBatDauKM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Chọn ngày bắt đầu khuyến mãi"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đến"
+                android:paddingStart="25dp"
+                android:textSize="18sp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/editText_NgayKetThucKM"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_edittext"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_baseline_expand_more_32"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/warning_NgayKetThucKM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Chọn ngày kết thúc khuyến mãi"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kiểu gói"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:id="@+id/radioGroup_kieuGoiKM"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_GoiGiamGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gói giảm giá"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/radio_GoiTangKem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gói tặng kèm"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/warning_AddKieuGoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Chọn kiểu gói"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_ChonAnhWarranty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:text="Chọn ảnh"/>
+
+            <ImageView
+                android:id="@+id/ImageView_hinhAnhWarranty"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image" />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/warning_ChonAnhKM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Chọn ảnh cho khuyến mãi"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+
+
+        <EditText
+            android:id="@+id/EditText_khuyenMai1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập khuyến mãi 1"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/EditText_khuyenMai2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập khuyến mãi 2"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/EditText_khuyenMai3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập khuyến mãi 3"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/EditText_khuyenMai4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập khuyến mãi 4"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/EditText_khuyenMai5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập khuyến mãi 5"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/warning_nhapKhuyenMai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Nhập ít nhất 1 khuyến mãi"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_XacNhanAddKM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="Xác nhận"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0.25"/>
+            <Button
+                android:id="@+id/button_HuyAddKM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="Hủy"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0.75"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

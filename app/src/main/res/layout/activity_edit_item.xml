@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_Item_Activity">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chỉnh sửa thông tin sản phẩm"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.009" />
+
+
+            <EditText
+                android:id="@+id/edt_editTenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập tên sản phẩm"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/warning_tenSpEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập tên sản phẩm"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <EditText
+                android:id="@+id/edt_editTenThuongHieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập tên thương hiệu"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:id="@+id/warning_tenThuongHieuEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập tên thương hiệu"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <EditText
+                android:id="@+id/edt_editGiaSanPham"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập giá sản phẩm"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/warning_loaiSpEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập giá sản phẩm"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <EditText
+                android:id="@+id/edt_editCameraTruoc"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập thông số Camera trước"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/warning_CameraTruocEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập thông số Camera trước"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+
+            <EditText
+                android:id="@+id/edt_editCameraSau"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập thông số Camera Sau"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/warning_CameraSauEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập thông số Camera Sau"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <LinearLayout
+                android:id="@+id/lnl_editCPU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_editThuongHieuCPU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Hãng Cpu"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+                <EditText
+                    android:id="@+id/edt_editTenCPU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Tên Cpu"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+                <EditText
+                    android:id="@+id/edt_editThongSoCPU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Thông số"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/warning_thongTinCPUEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập đủ thông tin cpu"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <LinearLayout
+                android:id="@+id/lnl_editbonho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_editSSD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="SSD"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="GB"
+                    android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+                <EditText
+                    android:id="@+id/edt_editHDD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="HDD"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:id="@+id/edit_item_GB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="GB"
+                    android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/warning_thongTinBoNhoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập đủ thông tin bộ nhớ"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+
+            <EditText
+                android:id="@+id/edt_editThongSoManHinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Thông số màn hình"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:id="@+id/warning_thongSoManHinhEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập thông số màn hình"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <LinearLayout
+                android:id="@+id/lnl_editRAM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_editRam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Ram"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="GB"
+                    android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+                <EditText
+                    android:id="@+id/edt_editLoaiRam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Loại"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+                <EditText
+                    android:id="@+id/edt_editBusRam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="BUS"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:id="@+id/edit_item_MHZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="MHZ"
+                    android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/warning_thongSoRamEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập đủ thông số Ram"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+
+            <EditText
+                android:id="@+id/edt_editPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Pin"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:id="@+id/warning_thongSoPinEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập thông số Pin"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+
+            <LinearLayout
+                android:id="@+id/lnl_editSOCONG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_editSoCong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Số cổng"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Cổng"
+                    android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+                <EditText
+                    android:id="@+id/edt_editLoaiCong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Nhập loại cổng kết nối"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/warning_thongTinCongEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập thông tin cổng kết nối"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+
+            <LinearLayout
+                android:id="@+id/lnl_editCANNANG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_editCanNang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Nhập cân nặng"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="KG"
+                    android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/warning_CanNangEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập cân nặng"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <LinearLayout
+                android:id="@+id/lnl_editSOLUONG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_editSoLuong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Nhập số lượng"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Chiếc"
+                    android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/warning_soLuongEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập số lượng"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <EditText
+                android:id="@+id/edt_editThongTinThem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Nhập thông tin thêm"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:id="@+id/warning_thongTinThemEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Nhập thông tin thêm"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/buttonEditHinhAnh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="chọn ảnh"
+                    android:textColor="@color/white"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Đã chọn "
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/textViewEditSoAnhDaChon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text=" ảnh"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/warning_ChonAnhEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="*Chọn ảnh"
+                android:visibility="gone"
+                android:textColor="#F44336"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/recycleView_AnhDaChonEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonEditXacNhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="Xác nhận"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="0.25"/>
+                <Button
+                    android:id="@+id/buttonEditHuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="Hủy"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="0.75"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/ImageView_Bottom_Shopping_Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:padding="16dp"
+            android:src="@drawable/shopping_cart" />
+
+
+        <TextView
+            android:id="@+id/textView_Bottom_Buy_Now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#3DBAF3"
+            android:padding="16dp"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
+            android:text="Mua ngay"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

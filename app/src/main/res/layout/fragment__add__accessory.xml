@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_add_accessory"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Fragment.Fragment_Add_Accessory">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm phụ kiện"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+
+        <EditText
+            android:id="@+id/editTextAddLoaiPhuKien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập loại phụ kiện"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/warning_LoaiPhuKienAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Nhập loại phụ kiện"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+
+        <EditText
+            android:id="@+id/editTextAddHangPhuKien"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập hãng phụ kiện"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/warning_HangPhuKienAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Nhập hãng phụ kiện"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+
+        <EditText
+            android:id="@+id/editTextAddTenPhuKien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập tên phụ kiện"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <TextView
+            android:id="@+id/warning_tenPhuKienAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Nhập tên phụ kiện"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+        <EditText
+            android:id="@+id/editTextAddGiaPhuKien"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập giá phụ kiện"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/warning_GiaPhuKienAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Nhập giá phụ kiện"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+
+        <EditText
+            android:id="@+id/editTextAddThongTinPhuKien"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập thông tin phụ kiện"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/warning_ThongTinPhuKienAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Nhập thông tin phụ kiện"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+        <EditText
+            android:id="@+id/editTextAddSoLuongPhuKien"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Nhập số lượng phụ kiện"
+            android:paddingStart="20dp"
+            android:inputType="number"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/warning_SoLuongPhuKienAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Nhập thông tin phụ kiện"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonAddHinhAnhPhuKien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chọn ảnh"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Đã chọn "
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/textViewAddSoAnhPhuKienDaChon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text=" ảnh"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/warning_ChonAnhAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="*Chọn ảnh"
+            android:visibility="gone"
+            android:textColor="#F44336"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/recycleView_AnhPhuKienDaChonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonAddPhuKienXacNhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="Xác nhận"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0.25"/>
+            <Button
+                android:id="@+id/buttonAddPhuKienHuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="Hủy"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0.75"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

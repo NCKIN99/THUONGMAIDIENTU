@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1325" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/bg_indicator3_qc.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/bo_goc.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/bo_goc_hinh.xml" value="0.1325" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/bo_goc_lam_mo.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/circle_textview.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/custom_bottom_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/custom_button.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/custom_button2.xml" value="0.101" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/custom_edittext.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/dash_textview.xml" value="0.1295" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.189" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.189" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.189" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.189" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/ic_baseline_remove_circle_24.xml" value="0.189" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1325" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/radius.xml" value="0.166" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/radius_semi_circle.xml" value="0.1855" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/strikethrought.xml" value="0.1295" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/drawable/stroke.xml" value="0.2555" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_account_setting.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_add_warranty.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_buying.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_edit_item.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_filter_item.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_item_information.xml" value="0.264" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_item_state.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_list_item_addor_edit.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_list_warranty.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_shopping_cart.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_splash.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/activity_verify_phone_number.xml" value="0.264" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/bottom_toolbar_buying_item.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/bottom_toolbar_item_information.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/cart_action_item.xml" value="0.4" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/dialog_change_gender.xml" value="0.2" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/dialog_change_information.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/dialog_huydon.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/dialog_xacnhandon.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__add__accessory.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__add__phone.xml" value="0.264" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__add__warranty.xml" value="0.22950819672131148" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__add_item.xml" value="0.2" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__add_warranty.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__list_add_item.xml" value="0.16" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__user__item__state.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__user_add_item.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__user_footer.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__user_info.xml" value="0.18931159420289856" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment__user_order_status.xml" value="0.2359375" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment_scrolling.xml" value="0.2359375" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment_tab_accessory.xml" value="0.2" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment_tab_home.xml" value="0.264" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment_tab_laptop.xml" value="0.2" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment_tab_phone.xml" value="0.2" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment_tab_user.xml" value="0.2" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/fragment_user_list.xml" value="0.11980749746707194" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/item_add_or_edit.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/item_add_warranty.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/item_inf.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/item_inf_mini.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/item_information.xml" value="0.2" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/item_list_warranty.xml" value="0.264" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/item_photo.xml" value="0.10843373493975904" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/item_qc.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/layout_add_item_user.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.264" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/layout_footer_user.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/layout_information_user_user.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/layout_listview_function_user.xml" value="0.11980749746707194" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/layout_order_status.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/layout_order_status_user.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/layout_qc2.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/login_tab_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/logup_tab_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/menu_all_tab.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/menu_tab_home.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/toolbar.xml" value="0.176" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/toolbar_add_warranty.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/toolbar_item_information.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/user_item_state.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/user_item_state2.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/layout/wait_for_confirmation_item.xml" value="0.536" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/menu/menu_add_item.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/menu/menu_add_item_filter.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/menu/menu_search.xml" value="0.25" />
+        <entry key="..\:/Users/pc/Desktop/tai lieu/Android/AppBanHang/app/src/main/res/menu/popup_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

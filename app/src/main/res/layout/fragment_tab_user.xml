@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_tab_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.TabFragmentUser">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#ECEAEA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:background="#03A9F4">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/background_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/default_image"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#424141"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.075"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.866" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.061"
+                    app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.585" />
+
+                <TextView
+                    android:id="@+id/textView_tenTK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Đơn hàng bán ra"
+                    android:drawablePadding="10dp"
+                    android:textSize="18sp"
+                    android:gravity="center|start"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    app:drawableLeftCompat="@drawable/note"
+                    android:background="@drawable/stroke"
+                    tools:ignore="RtlSymmetry"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:baselineAligned="false">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ItemState_0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:id="@+id/frameLayout1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.3">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:src="@drawable/outline_move_to_inbox_black_48dp"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/textView_Item_State_0"
+                                android:visibility="visible"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:text="0"
+                                android:background="@drawable/circle_textview"
+                                android:textColor="@color/white"
+                                android:layout_gravity="top|end"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chờ xác nhận"
+                            android:textColor="#222121"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/frameLayout1"
+                            app:layout_constraintVertical_bias="0"
+                            android:layout_marginTop="15dp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ItemState_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <FrameLayout
+                            android:id="@+id/frameLayout2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.3">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:src="@drawable/outline_inventory_2_black_48dp"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/textView_Item_State_1"
+                                android:visibility="visible"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:text="0"
+                                android:background="@drawable/circle_textview"
+                                android:textColor="@color/white"
+                                android:layout_gravity="top|end"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chờ giao hàng"
+                            android:textColor="#222121"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+                            app:layout_constraintVertical_bias="0"
+                            android:layout_marginTop="15dp"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ItemState_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <FrameLayout
+                            android:id="@+id/frameLayout3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.3">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:src="@drawable/outline_local_shipping_black_48dp"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/textView_Item_State_2"
+                                android:visibility="visible"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:text="0"
+                                android:background="@drawable/circle_textview"
+                                android:textColor="@color/white"
+                                android:layout_gravity="top|end"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="đang giao"
+                            android:textColor="#222121"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+                            app:layout_constraintVertical_bias="0"
+                            android:layout_marginTop="20dp"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ItemState_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <FrameLayout
+                            android:id="@+id/frameLayout4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.3">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:src="@drawable/outline_inventory_black_48dp"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/textView_Item_State_3"
+                                android:visibility="visible"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:text="0"
+                                android:background="@drawable/circle_textview"
+                                android:textColor="@color/white"
+                                android:layout_gravity="top|end"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="đã giao"
+                            android:textColor="#222121"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/frameLayout4"
+                            app:layout_constraintVertical_bias="0"
+                            android:layout_marginTop="20dp"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ItemState_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <FrameLayout
+                            android:id="@+id/frameLayout5"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.3">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:src="@drawable/ic_baseline_assignment_late_24"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/textView_Item_State_4"
+                                android:visibility="visible"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:text="0"
+                                android:background="@drawable/circle_textview"
+                                android:textColor="@color/white"
+                                android:layout_gravity="top|end"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="đơn hủy"
+                            android:textColor="#222121"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/frameLayout5"
+                            app:layout_constraintVertical_bias="0"
+                            android:layout_marginTop="20dp"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <TextView
+                    android:background="@drawable/stroke"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingStart="10dp"
+                    android:textSize="16sp"
+                    android:gravity="center|start"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    tools:ignore="RtlSymmetry"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/tabUserAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Thêm hàng"
+                        android:drawablePadding="10dp"
+                        android:textSize="18sp"
+                        android:gravity="center|start"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        app:drawableLeftCompat="@drawable/note"
+                        android:background="@drawable/stroke"
+                        tools:ignore="RtlSymmetry"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:baselineAligned="false">
+                        <TextView
+                            android:id="@+id/textView_AddItem"
+                            android:background="@drawable/stroke"
+                            android:paddingStart="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="thêm hàng"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:gravity="center|left"
+                            tools:ignore="RtlHardcoded"
+                            app:drawableEndCompat="@drawable/next" />
+                        <TextView
+                            android:id="@+id/textView_AddWarranty_Device"
+                            android:layout_marginStart="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="thêm gói bảo hành"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            tools:ignore="RtlHardcoded"
+                            app:drawableEndCompat="@drawable/next" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/added_item"
+                        android:background="@drawable/stroke"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:paddingStart="10dp"
+                        android:textSize="16sp"
+                        android:gravity="center|start"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/black"
+                        tools:ignore="RtlSymmetry"/>
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                tools:ignore="InefficientWeight"
+                android:layout_marginBottom="60dp">
+                <TextView
+                    android:id="@+id/textView_AccountSetting"
+                    android:background="@drawable/stroke"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Thiết lập tài khoản"
+                    android:gravity="center|left"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:drawablePadding="10dp"
+                    android:paddingStart="10dp"
+                    app:drawableLeftCompat="@drawable/account"
+                    tools:ignore="NestedWeights,RtlHardcoded" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingStart="10dp"
+                    android:text="Tư vấn mua hàng"
+                    android:gravity="center|left"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:drawablePadding="10dp"
+                    app:drawableLeftCompat="@drawable/call" />
+                <TextView
+                    android:background="@drawable/stroke"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingStart="10dp"
+                    android:text="Hỗ trợ kỹ thuật"
+                    android:gravity="center|left"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:drawablePadding="10dp"
+                    app:drawableLeftCompat="@drawable/call"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>

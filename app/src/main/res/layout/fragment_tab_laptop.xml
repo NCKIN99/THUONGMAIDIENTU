@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.TabFragmentLaptop"
+    android:background="#ECEAEA">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/menu_all_tab"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2_QC"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/black"/>
+
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/circle_indicator_QC"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            app:ci_drawable_unselected="@drawable/bg_indicator3_qc"
+            app:ci_drawable="@drawable/bg_indicator3_qc"/>
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#E61010"
+                        android:text="Bán chạy"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                        android:text="xem thêm"
+                        />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="@color/white"
+                    android:id="@+id/recycleView_tab_laptop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#E61010"
+                    android:text="Gợi ý hôm nay"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="70dp"
+                    android:background="#ECEAEA"
+                    android:id="@+id/recycleView_tab_laptop_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

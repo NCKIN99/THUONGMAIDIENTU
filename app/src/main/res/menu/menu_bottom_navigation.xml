@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item   android:id="@+id/menu_home"
+        android:title="Trang chủ"
+        android:icon="@drawable/home"/>
+    <item android:id="@+id/menu_MobilePhone"
+        android:title="Điện thoại"
+        android:icon="@drawable/smartphone"/>
+    <item android:id="@+id/menu_Laptop"
+        android:title="Laptop"
+        android:icon="@drawable/laptop"/>
+    <item android:id="@+id/menu_accessory"
+        android:title="Phụ kiện"
+        android:icon="@drawable/adapter" />
+    <item android:id="@+id/menu_user"
+        android:title="Tài khoản"
+        android:icon="@drawable/account"/>
+
+
+</menu>
